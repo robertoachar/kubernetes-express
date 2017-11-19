@@ -27,6 +27,76 @@ Action | Usage
 Starting development mode | `npm run dev`
 Linting code              | `npm run lint`
 
+# Docker Compose
+
+* Build images
+
+```bash
+$ docker-compose build
+```
+
+* Start containers
+
+```bash
+$ docker-compose up
+```
+
+* Stop containers
+
+```bash
+$ docker-compose down
+```
+
+# Kubernetes
+
+* Build an image
+
+```bash
+$ docker build -f build.dockerfile -t robertoachar/kubernetes-express:1.0.0 .
+```
+
+* Push an image
+
+```bash
+$ docker push robertoachar/kubernetes-express:1.0.0
+```
+
+* Create Deployment
+
+```bash
+$ kubectl create -f kubernetes/express-deployment.yml
+```
+
+* Create Service
+
+```bash
+$ kubectl create -f kubernetes/express-service.yml
+```
+
+* Check pods
+
+```bash
+$ kubectl get pods
+```
+
+* Check Deployment
+
+```bash
+$ kubectl describe deployment kubernetes-express
+```
+
+* Check Service
+
+```bash
+$ kubectl describe service kubernetes-express
+```
+
+* Check logs
+
+```bash
+$ kubectl.exe logs -l "app=kubernetes-express"
+```
+
 # Author
 
 [Roberto Achar](https://twitter.com/robertoachar)
