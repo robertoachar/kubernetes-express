@@ -1,0 +1,37 @@
+{
+  "name": "kubernetes-express",
+  "version": "1.0.0",
+  "description": "A playground for Kubernetes with Express.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "homepage": "https://github.com/robertoachar/kubernetes-express#readme",
+  "keywords": [
+    "kubernetes",
+    "docker",
+    "docker-compose",
+    "node",
+    "express"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/**/*.js",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertoachar/kubernetes-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertoachar/kubernetes-express/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "4.11.0",
+    "nodemon": "1.12.1"
+  },
+  "private": true,
+  "license": "MIT"
+}
