@@ -6,6 +6,7 @@
   "homepage": "https://github.com/robertoachar/kubernetes-express#readme",
   "keywords": [
     "kubernetes",
+    "k8s",
     "docker",
     "docker-compose",
     "node",
