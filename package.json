@@ -28,7 +28,10 @@
   "bugs": {
     "url": "https://github.com/robertoachar/kubernetes-express/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "4.16.2",
+    "winston": "2.4.0"
+  },
   "devDependencies": {
     "eslint": "4.11.0",
     "nodemon": "1.12.1"
